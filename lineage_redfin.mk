@@ -14,7 +14,7 @@ $(call inherit-product, device/google/redfin/aosp_redfin.mk)
 include device/google/redfin/device-lineage.mk
 
 # Device identifier. This must come after all inclusions
-PRODUCT_BRAND := google
+PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel 5
 PRODUCT_NAME := lineage_redfin
 
