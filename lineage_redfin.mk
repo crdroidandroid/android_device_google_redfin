@@ -28,4 +28,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := google/redfin/redfin:13/TP1A.221105.002/9080065:user/release-keys
 
+TARGET_ENABLE_BLUR := true
+
 $(call inherit-product, vendor/google/redfin/redfin-vendor.mk)
