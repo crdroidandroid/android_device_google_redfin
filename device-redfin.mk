@@ -226,7 +226,3 @@ PRODUCT_PACKAGES += \
 ifneq ($(PRODUCT_VENDOR_FREEZE_SYSTEM_BUILD),true)
 PRODUCT_PACKAGES += redfin_product_compatibility_matrix.xml
 endif
-
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overla	y

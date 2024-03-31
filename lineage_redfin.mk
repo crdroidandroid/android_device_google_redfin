@@ -5,16 +5,18 @@
 #
 
 # Inherit some common Lineage stuff.
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/redfin/aosp_redfin.mk)
+$(call inherit-product, device/google/redbull/lineage_common.mk)
 
 include device/google/redfin/device-lineage.mk
 
 # Device identifier. This must come after all inclusions
-PRODUCT_BRAND := Google
+PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 5
 PRODUCT_NAME := lineage_redfin
 
@@ -24,10 +26,8 @@ TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=redfin \
-    PRIVATE_BUILD_DESC="redfin-user 13 TQ1A.221205.011 9244662 release-keys"
+    PRIVATE_BUILD_DESC="redfin-user 13 TQ3A.230901.001 10750268 release-keys"
 
-BUILD_FINGERPRINT := google/redfin/redfin:13/TQ1A.221205.011/9244662:user/release-keys
-
-TARGET_ENABLE_BLUR := true
+BUILD_FINGERPRINT := google/redfin/redfin:13/TQ3A.230901.001/10750268:user/release-keys
 
 $(call inherit-product, vendor/google/redfin/redfin-vendor.mk)
