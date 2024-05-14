@@ -1,4 +1,4 @@
-W# All blobs are extracted from Google factory images for each new ASB
+# All blobs are extracted from Google factory images for each new ASB
 
 # product partition
 
