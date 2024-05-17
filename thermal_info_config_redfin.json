@@ -342,20 +342,5 @@
             "Name":"fcc",
             "Type":"BATTERY"
         }
-    ],
-    "Stats": {
-        "Sensors": {
-            "RecordWithDefaultThreshold": ["skin-therm-monitor"],
-            "RecordWithThreshold": [
-                {
-                    "Name": "skin-therm-monitor",
-                    "Thresholds": [31, 33, 35, 37, 39, 41, 43, 45, 47, 49, 51]
-                },
-                {
-                    "Name": "usbc-virt-monitor",
-                    "Thresholds": [10, 15]
-                }
-            ]
-        }
-    }
+    ]
 }
