@@ -5,10 +5,9 @@
 #
 
 # Inherit some common Lineage stuff.
-DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 # Inherit device configuration
 $(call inherit-product, device/google/redfin/aosp_redfin.mk)
 $(call inherit-product, device/google/redbull/lineage_common.mk)
