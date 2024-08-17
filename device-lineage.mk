@@ -10,17 +10,8 @@ $(call inherit-product, device/google/redbull/device-lineage.mk)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/redfin/overlay-lineage
 DISABLE_ARTIFACT_PATH_REQUIREMENTS += true
 
-# Camera
-PRODUCT_PACKAGES += \
-    android.hardware.camera.device-V2-ndk.vendor:64 \
-    android.hardware.camera.provider-V2-ndk.vendor:64
-
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
-
-# Wi-Fi
-PRODUCT_PACKAGES += \
-    android.hardware.wifi-V2-ndk.vendor:64
 
 # wireless_charger HAL service
 include device/google/redfin/wireless_charger/wireless_charger.mk
