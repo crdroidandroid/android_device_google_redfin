@@ -8,7 +8,12 @@ $(call inherit-product, device/google/redbull/device-lineage.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/redfin/overlay-lineage
+
+# For whatever reason redfin needs this for viper. No clue why as of now
 DISABLE_ARTIFACT_PATH_REQUIREMENTS += true
+
+# CHRE
+$(call soong_config_set,chre,chre_daemon_dsp_library,//vendor/google/redfin:libadsprpc)
 
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
